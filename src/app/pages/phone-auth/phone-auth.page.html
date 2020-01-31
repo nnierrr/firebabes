@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>phone-auth</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" (click)='sendOTP()'>Send OTP</ion-button>
+  <ion-item>
+    <ion-label>Phone Number</ion-label>
+    <ion-input [(ngModel)]='phoneNumber'></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Code</ion-label>
+    <ion-input [(ngModel)]='code'></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)='verifyTOP()'>Verfy OTP</ion-button>
+  <ion-button expand="block" (click)='signOut()'>Sign Out</ion-button>
+  <ion-button expand="block" (click)='getCurrentUserToken()'>Get Current Token</ion-button>
+  <p>{{ verificationId }}</p>
+</ion-content>

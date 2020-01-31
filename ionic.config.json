@@ -1,0 +1,7 @@
+{
+  "name": "devacticFire",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
