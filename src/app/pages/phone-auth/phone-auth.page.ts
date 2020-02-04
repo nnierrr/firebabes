@@ -20,6 +20,7 @@ export class PhoneAuthPage implements OnInit {
 
   sendOTP() {
     console.log('SEND OTP REQUEST');
+    this.verificationId = null;
     this.firebaseAuthentication.verifyPhoneNumber(this.phoneNumber, 3000).then(verificationId => {
       this.verificationId = verificationId;
       console.log(verificationId);
